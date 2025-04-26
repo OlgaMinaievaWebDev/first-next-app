@@ -6,9 +6,11 @@ import MainHeaderBackground from './main-header-background';
 
 
 export default function MainHeader() {
+  
  return (
   <>
-   <MainHeaderBackground/>
+     <MainHeaderBackground />
+   
      <header className={styles.header}>
        <Link className={styles.logo} href="/">
          <Image src={logoImg} alt="A plate with food on it" priority />
