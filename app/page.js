@@ -4,12 +4,15 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main>
- 
-     
-      <p>🔥 Let&apos;s get started! 🔥</p>
-
+      <h1>Welcome to meals app</h1>
       <p>
-        <Link href="/about">About</Link>
+        <Link href="/meals">Meals</Link>
+      </p>
+      <p>
+        <Link href="/meals/share">Share Meal</Link>
+      </p>
+      <p>
+        <Link href="/community">Community</Link>
       </p>
     </main>
   )
