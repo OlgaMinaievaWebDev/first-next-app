@@ -1,9 +1,26 @@
+import styles from './page-module.css'
+
 export default function MealDetailsPage() {
   return (
-    <main>
-      <h1>Meals Details</h1>
-      <p>Here you can find the meals post!</p>
+    <>
+      <header className={styles.header}>
+        <div className={styles.image}>
+          <Image fill />
+        </div>
+        <div className={styles.headerText}>
+          <h1>TITLE</h1>
+          <p className={styles.creator}>
+            by <a href={`mailto:${'EMAIL'}`}>CREATOR</a>
+          </p>
+          <p className={styles.summary}>SUMMARY</p>
+          </div>
+      </header>
+      <main >
+        <p className={styles.instructions} dangerouslySetInnerHTML={{
+  __html: '...',
+}}></p>
+      </main>
      
-    </main>
+    </>
   );
 }
